@@ -127,14 +127,14 @@ const ProfileImage = styled.img`
 	width: 100%;
 	height: auto; /* Maintain aspect ratio */
 	object-fit: cover;
-	filter: grayscale(100%) brightness(0.5) sepia(1) hue-rotate(130deg)
-		saturate(2);
+	filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg) saturate(1.5);
 	transition: filter 0.3s ease;
 
 	${ProfileImageWrapper}:hover & {
-		filter: grayscale(0%) brightness(1) sepia(0) hue-rotate(0deg) saturate(1);
+		filter: grayscale(0%) brightness(1) sepia(0.3) hue-rotate(20deg) saturate(1.2);
 	}
 `;
+
 
 const About = () => {
 	return (

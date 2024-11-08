@@ -61,14 +61,18 @@ const ProjectImage = styled.img`
 	height: auto;
 	object-fit: cover;
 	border-radius: 8px;
-	filter: grayscale(100%) brightness(0.5) sepia(1) hue-rotate(130deg)
-		saturate(2);
+	filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg) saturate(1.5);
 	transition: filter 0.3s ease;
+
+	&:hover {
+		filter: grayscale(0%) brightness(1) sepia(0.3) hue-rotate(20deg) saturate(1.2);
+	}
 
 	@media (max-width: 768px) {
 		max-width: 100%;
 	}
 `;
+
 const ProjectCard = styled.div`
 	display: flex;
 	flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};

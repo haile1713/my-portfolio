@@ -27,7 +27,8 @@ const EmailLink = styled.a`
   transition: color 0.3s ease;
 
   &:hover {
-    color: #53c1c6;
+    color: #E8CB78;
+    transform: scale(1.1);
   }
 
   @media (max-width: 768px) {
@@ -38,7 +39,7 @@ const EmailLink = styled.a`
 const Divider = styled.div`
   height: 100px;
   width: 1px;
-  background-color: #64ffda;
+  background-color: #E8CB78;
 
   @media (max-width: 480px) {
     display: none; /* Hide the divider on very small screens */
@@ -48,7 +49,7 @@ const Divider = styled.div`
 const EmailSidebar = () => {
   return (
     <Sidebar>
-      <EmailLink href="mailto:your.email@example.com">your.email@example.com</EmailLink>
+      <EmailLink href="mailto:your.email@example.com" target="_blank">Haileleulfiseha@gmail.com</EmailLink>
       <Divider />
     </Sidebar>
   );

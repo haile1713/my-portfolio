@@ -62,7 +62,7 @@ const SocialSidebar = () => {
 			</IconLink>
 			{/* <IconLink href="#"><FaTwitter /></IconLink> */}
 			<IconLink
-				href="www.linkedin.com/in/haileleul-f-mezgebe-577835227"
+				href="https://www.linkedin.com/in/haileleul-f-mezgebe-577835227"
 				target="_blank"
 			>
 				<FaLinkedin />

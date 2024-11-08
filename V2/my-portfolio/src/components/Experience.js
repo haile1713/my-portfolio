@@ -214,10 +214,10 @@ const Experience = () => {
 			dates: "Aug 2023 – Present",
 			link: "https://www.figma.com/proto/7pxNcgVY1ZVWSusbP2PtGQ/Balesuq?node-id=42-961&starting-point-node-id=42%3A961&t=vVga0ZBXzYAs6kz9-1",
 			details: [
-				"Built and deployed a mobile shopping app using Flutter, integrated with PostgreSQL.",
-				"Led the development of secure payment processing and user analytics features.",
-				"Focused on creating an intuitive and user-friendly design to drive engagement.",
-				"Collaborated on strategic planning and feature expansion to grow user base.",
+				"Currently developing a mobile shopping app using Flutter, with integration planned for PostgreSQL.",
+				"Designing secure payment processing and user analytics features to ensure safety and data-driven insights.",
+				"Focusing on an intuitive and engaging user interface to enhance customer experience.",
+				"Collaborating on strategic planning and feature roadmap for future enhancements and growth.",
 			],
 		},
 		{
@@ -228,7 +228,6 @@ const Experience = () => {
 				"Developed automation scripts to optimize data processing for large-scale operations.",
 				"Implemented user interfaces to simplify data interaction for non-technical users.",
 				"Conducted code reviews and performance optimizations for smoother application flow.",
-				"Integrated third-party APIs for enhanced functionality and data retrieval.",
 			],
 		},
 		{

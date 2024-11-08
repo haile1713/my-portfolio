@@ -152,8 +152,8 @@ const About = () => {
 					<br />
 					Today, I am focused on creating products that have an impact,
 					have co-founded a mobile shopping app, and have contributed to
-					social innovation initiatives . Two of my most recent projects are
-					an expense tracker that integrates machine learning and an
+					social innovation initiatives . Two of my most recent projects
+					are an expense tracker that integrates machine learning and an
 					intelligent waste management software.
 					<br />
 					<br />

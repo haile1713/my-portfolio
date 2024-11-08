@@ -1,26 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { FaFolder, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const SectionTitle = styled.h3`
 	font-size: 1.5rem;
 	color: ${({ theme }) => theme.colors.primary};
 	margin-bottom: 1rem;
 	text-align: center;
-`;
-
-const Subtitle = styled.a`
-	color: #64ffda;
-	text-align: center;
-	font-size: 0.9rem;
-	display: block;
-	margin-bottom: 2rem;
-	cursor: pointer;
-	text-decoration: none;
-
-	&:hover {
-		text-decoration: underline;
-	}
 `;
 
 const ProjectsWrapper = styled.div`
@@ -61,19 +47,14 @@ const ProjectCard = styled.div`
 
 	&:hover {
 		transform: translateY(-5px);
-     border: 2px solid ${({ theme }) => theme.colors.primary}; /* LED border color */
-    box-shadow: 0 0 15px ${({ theme }) => theme.colors.primary}; /* Glow effect */
+		border: 2px solid ${({ theme }) => theme.colors.primary};
+		box-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
 	}
 
 	h4 {
 		margin: 0;
 		font-size: 1.2rem;
 		color: ${({ theme }) => theme.colors.primary};
-	}
-
-	p {
-		font-size: 0.9rem;
-		margin: 1rem 0;
 	}
 
 	.tags {
@@ -84,19 +65,17 @@ const ProjectCard = styled.div`
 
 	.icons {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		align-items: center;
+		gap: 0.5rem;
 		margin-bottom: 1rem;
 
-		.folderIcon {
-			color: ${({ theme }) => theme.colors.text};
-			font-size: 1.5rem;
-		}
-
-		.linkIcon {
+		.linkIcon,
+		.githubIcon {
 			color: ${({ theme }) => theme.colors.primary};
 			font-size: 1rem;
 			cursor: pointer;
+			transition: color 0.3s ease;
 
 			&:hover {
 				color: ${({ theme }) => theme.colors.text};
@@ -139,44 +118,37 @@ const NoteworthyProjects = () => {
 		{
 			title: "Paz Terrazzo",
 			tags: ["Next.js", "React", "Tailwind CSS", "ShadCN"],
-			link: "https://paz-sigma.vercel.app/", // Replace with actual link
-			github: "https://github.com/haile1713/PAZ", // Replace with actual GitHub link if available
-			image: "path_to_image_paz", // Replace with actual image path
+			link: "https://paz-sigma.vercel.app/",
+			github: "https://github.com/haile1713/PAZ",
 		},
 		{
 			title: "Nuclearn",
 			tags: ["Next.js", "React", "Tailwind CSS"],
-			link: "https://nuclearn.vercel.app/", // Live demo link
-			github: "https://github.com/haile1713/nuclearn", // GitHub link
-			image: "path_to_image_nuclearn", // Replace with actual image path
+			link: "https://nuclearn.vercel.app/",
+			github: "https://github.com/haile1713/nuclearn",
 		},
 		{
 			title: "Algorithm Visualized",
 			tags: ["Vite", "Tailwind CSS", "p5.js", "TypeScript"],
-			link: "https://algorithm-visualized.vercel.app/", // Live demo link
-			github: "https://github.com/haile1713/algorithm-visualized", // Replace with actual GitHub link if available
-			image: "path_to_image_algorithm_visualized", // Replace with actual image path
+			link: "https://algorithm-visualized.vercel.app/",
+			github: "https://github.com/haile1713/algorithm-visualized",
 		},
 		{
-			title: "Tetris game",
-			tags: ["Vite", "Tailwind CSS", "p5.js", "TypeScript"],
-			link: "https://algorithm-visualized.vercel.app/", // Live demo link
-			github: "https://github.com/user/algorithm-visualized", // Replace with actual GitHub link if available
-			image: "path_to_image_algorithm_visualized", // Replace with actual image path
+			title: "Tetris Game",
+			tags: ["JavaScript", "Konva.js", "Game Development"],
+			link: "https://tetris-konva.vercel.app/",
+			github: "https://github.com/haile1713/Tetris--Konva",
 		},
 		{
 			title: "Bestie",
-			tags: ["Vite", "Tailwind CSS", "p5.js", "TypeScript"],
-			link: "https://algorithm-visualized.vercel.app/", // Live demo link
-			github: "https://github.com/user/algorithm-visualized", // Replace with actual GitHub link if available
-			image: "path_to_image_algorithm_visualized", // Replace with actual image path
+			tags: ["Figma", "Flutter", "Firebase", "PostgreSQL"],
+			link: "https://www.figma.com/proto/ZXY8jEYI6c6zjA2cRyIiEj/Bestie?node-id=3-14&starting-point-node-id=3%3A14&t=50P36d0B2uQBod5p-1",
+			// link: "https://www.figma.com/proto/ZXY8jEYI6c6zjA2cRyIiEj/Bestie?node-id=117-469&starting-point-node-id=117%3A469&t=50P36d0B2uQBod5p-1",
 		},
 		{
 			title: "Filega",
-			tags: ["Vite", "Tailwind CSS", "p5.js", "TypeScript"],
-			link: "https://algorithm-visualized.vercel.app/", // Live demo link
-			github: "https://github.com/user/algorithm-visualized", // Replace with actual GitHub link if available
-			image: "path_to_image_algorithm_visualized", // Replace with actual image path
+			tags: ["Figma", "Flutter", "Express", "PostgreSQL"],
+			link: "https://www.figma.com/proto/oOxiDJHku9bZEiKT2fkL8F",
 		},
 	];
 
@@ -189,17 +161,38 @@ const NoteworthyProjects = () => {
 	return (
 		<div>
 			<SectionTitle>Other Noteworthy Projects</SectionTitle>
-			{/* <Subtitle href="#">view the archive</Subtitle> */}
 			<ProjectsWrapper>
 				<ProjectsContainer>
 					{displayedProjects.map((project, index) => (
 						<ProjectCard key={index}>
 							<div className="icons">
-								<FaFolder className="folderIcon" />
-								<FaExternalLinkAlt className="linkIcon" />
+								<a
+									href={project.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Live Link"
+								>
+									<FaExternalLinkAlt className="linkIcon" />
+								</a>
+								{project.github && (
+									<a
+										href={project.github}
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="GitHub Link"
+									>
+										<FaGithub className="githubIcon" />
+									</a>
+								)}
 							</div>
-							<h4>{project.title}</h4>
-							<p>{project.description}</p>
+							<a
+								href={project.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Live Link"
+							>
+								<h4>{project.title}</h4>
+							</a>
 							<div className="tags">{project.tags.join(" • ")}</div>
 						</ProjectCard>
 					))}

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import match3 from  '../assets/match-3.png'
-import expense from  '../assets/expense tracker.png'
-import ecotrack from  '../assets/eco track.png'
-import snap from  '../assets/Snap2Pdf.png'
+import match3 from "../assets/match-3.png";
+import expense from "../assets/expense tracker.png";
+import ecotrack from "../assets/eco track.png";
+import snap from "../assets/Snap2Pdf.png";
 const WorkWrapper = styled.section`
 	padding: 4rem 2rem;
 	color: ${({ theme }) => theme.colors.text};
@@ -56,49 +56,48 @@ const ProjectGrid = styled.div`
 `;
 
 const ProjectImage = styled.img`
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  filter: grayscale(100%) brightness(0.5) sepia(1) hue-rotate(130deg) saturate(2);
-  transition: filter 0.3s ease;
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
+	filter: grayscale(100%) brightness(0.5) sepia(1) hue-rotate(130deg)
+		saturate(2);
+	transition: filter 0.3s ease;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
+	@media (max-width: 768px) {
+		max-width: 100%;
+	}
 `;
 const ProjectCard = styled.div`
-  display: flex;
-  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-  background-color: #112240;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 2rem;
-  gap: 2rem;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-  border: 2px solid transparent;
+	display: flex;
+	flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
+	background-color: #112240;
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 2rem;
+	gap: 2rem;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+	border: 2px solid transparent;
 
-  &:hover {
-    transform: translateY(-5px);
-    border: 2px solid ${({ theme }) => theme.colors.primary};
-    box-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
-  }
+	&:hover {
+		transform: translateY(-5px);
+		border: 2px solid ${({ theme }) => theme.colors.primary};
+		box-shadow: 0 0 15px ${({ theme }) => theme.colors.primary};
+	}
 
-  &:hover ${ProjectImage} {
-    filter: grayscale(0%) brightness(1) sepia(0) hue-rotate(0deg) saturate(1);
-  }
+	&:hover ${ProjectImage} {
+		filter: grayscale(0%) brightness(1) sepia(0) hue-rotate(0deg) saturate(1);
+	}
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
+	@media (max-width: 768px) {
+		flex-direction: column;
+		padding: 1.5rem;
+	}
 `;
-
-
 
 const ProjectContent = styled.div`
 	display: flex;
@@ -175,7 +174,7 @@ const Work = () => {
 			tags: ["JavaScript", "HTML5", "CSS3", "Pixi.js"],
 			link: "https://match-3-nine.vercel.app/",
 			github: "https://github.com/haile1713/match-3",
-			image: match3 ,
+			image: match3,
 		},
 		{
 			title: "Expense Tracker",
@@ -185,7 +184,7 @@ const Work = () => {
 			link: "https://expense-tracker-update-pi.vercel.app/",
 			github:
 				"https://github.com/haile1713/Simple--Expense-tracker-app-with-ML-",
-			image:expense,
+			image: expense,
 		},
 		{
 			title: "Eco Tracker",
@@ -199,8 +198,8 @@ const Work = () => {
 		{
 			title: "Snap2PDF",
 			description:
-				"A mobile app that allows users to snap images of documents and convert them to PDF files.",
-			tags: ["React Native", "Firebase", "OCR", "PDF Generation"],
+				"A desktop app that allows users to convert images into PDFs with ease. Supports multiple image formats and customizable PDF names and save locations.",
+			tags: [ "Python", "Tkinter", "PDF Generation"],
 			link: "https://drive.google.com/file/d/1MWf-J2pKDvBoK2Et7JSVg0zKKsUkfp27/view?usp=drive_link",
 			github: "https://github.com/haile1713/Snap2PDF",
 			image: snap,

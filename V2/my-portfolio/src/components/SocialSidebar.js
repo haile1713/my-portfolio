@@ -33,8 +33,7 @@ const IconLink = styled.a`
 
 	&:hover {
 		color: #e8cb78;
-    transform: scale(1.1);
-
+		transform: scale(1.1);
 	}
 
 	@media (max-width: 768px) {
@@ -62,7 +61,10 @@ const SocialSidebar = () => {
 				<FaInstagram />
 			</IconLink>
 			{/* <IconLink href="#"><FaTwitter /></IconLink> */}
-			<IconLink href="https://www.linkedin.com/in/haileleul-mezgebe-577835227" target="_blank">
+			<IconLink
+				href="www.linkedin.com/in/haileleul-f-mezgebe-577835227"
+				target="_blank"
+			>
 				<FaLinkedin />
 			</IconLink>
 			{/* <IconLink href="#"><FaDribbble /></IconLink> */}

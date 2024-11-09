@@ -127,14 +127,15 @@ const ProfileImage = styled.img`
 	width: 100%;
 	height: auto; /* Maintain aspect ratio */
 	object-fit: cover;
-	filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg) saturate(1.5);
+	filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg)
+		saturate(1.5);
 	transition: filter 0.3s ease;
 
 	${ProfileImageWrapper}:hover & {
-		filter: grayscale(0%) brightness(1) sepia(0.3) hue-rotate(20deg) saturate(1.2);
+		filter: grayscale(0%) brightness(1) sepia(0.3) hue-rotate(20deg)
+			saturate(1.2);
 	}
 `;
-
 
 const About = () => {
 	return (
@@ -142,8 +143,8 @@ const About = () => {
 			<Content>
 				<Title>About Me</Title>
 				<Description>
-					Hello! My name is [Your Name], and I discovered my passion for
-					technology and problem-solving when I first embarked on my
+					Hello! My name is Haileleul Fiseha, and I discovered my passion
+					for technology and problem-solving when I first embarked on my
 					adventure in Electrical & Computer Engineering. Since then, I've
 					dived into mobile applications, full-stack development, and
 					AI-driven solutions, building practical experience through a

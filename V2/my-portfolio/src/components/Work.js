@@ -61,11 +61,13 @@ const ProjectImage = styled.img`
 	height: auto;
 	object-fit: cover;
 	border-radius: 8px;
-	filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg) saturate(1.5);
+	filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg)
+		saturate(1.5);
 	transition: filter 0.3s ease;
 
 	&:hover {
-		filter: grayscale(0%) brightness(1) sepia(0.3) hue-rotate(20deg) saturate(1.2);
+		filter: grayscale(0%) brightness(1) sepia(0.3) hue-rotate(20deg)
+			saturate(1.2);
 	}
 
 	@media (max-width: 768px) {
@@ -203,7 +205,7 @@ const Work = () => {
 			title: "Snap2PDF",
 			description:
 				"A desktop app that allows users to convert images into PDFs with ease. Supports multiple image formats and customizable PDF names and save locations.",
-			tags: [ "Python", "Tkinter", "PDF Generation"],
+			tags: ["Python", "Tkinter", "PDF Generation"],
 			link: "https://drive.google.com/file/d/1MWf-J2pKDvBoK2Et7JSVg0zKKsUkfp27/view?usp=drive_link",
 			github: "https://github.com/haile1713/Snap2PDF",
 			image: snap,

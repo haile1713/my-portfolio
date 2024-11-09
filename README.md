@@ -2,4 +2,4 @@ check out my portfolio sites
 
 v1: https://cute-raindrop-c5701e.netlify.app/#about
 
-v2: 
+v2: https://haileleul.vercel.app/

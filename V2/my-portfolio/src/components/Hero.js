@@ -122,7 +122,7 @@ const Hero = () => {
 					development, I'm passionate about creating impactful tech
 					solutions and advancing my knowledge in emerging technologies.
 				</Description>
-				<ResumeButton href="/resume.pdf" target="_blank">
+				<ResumeButton href="https://drive.google.com/file/d/1VSaO8M5KDqTV_CXjQgBldiaQWlrbq3WF/view?usp=sharing" target="_blank">
 					Resume
 				</ResumeButton>
 				{/* <Button href="#contact">Check out my course!</Button> */}

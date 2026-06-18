@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import profileImage from "../assets/me.jpg"; // Adjust the path if needed
+import profileImage from "../assets/me.JPG"; // Adjust the path if needed
 
 const AboutWrapper = styled.section`
 	min-height: 100vh;
@@ -146,7 +146,7 @@ const About = () => {
 					Hello! My name is Haileleul Fiseha, and I discovered my passion
 					for technology and problem-solving when I first embarked on my
 					adventure in Electrical & Computer Engineering. Since then, I've
-					dived into mobile applications, full-stack development, and
+					dived into mobile applications, Front-end development, and
 					AI-driven solutions, building practical experience through a
 					variety of innovative projects.
 					<br />
@@ -163,7 +163,7 @@ const About = () => {
 				<SkillsList>
 					<SkillItem>JavaScript (ES6+)</SkillItem>
 					<SkillItem>React</SkillItem>
-					<SkillItem>Node.js</SkillItem>
+					{/* <SkillItem>Node.js</SkillItem> */}
 					<SkillItem>TypeScript</SkillItem>
 					<SkillItem>TensorFlow & Gemini AI</SkillItem>
 					<SkillItem>Flutter</SkillItem>

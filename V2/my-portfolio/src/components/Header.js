@@ -60,21 +60,6 @@ const NavLinks = styled.nav`
 	}
 `;
 
-const ResumeButton = styled.a`
-	padding: 0.5rem 1rem;
-	border: 1px solid ${({ theme }) => theme.colors.primary};
-	border-radius: 5px;
-	color: ${({ theme }) => theme.colors.primary};
-	font-weight: bold;
-	transition: background-color 0.3s ease, color 0.3s ease;
-	text-decoration: none;
-
-	&:hover {
-		background-color: ${({ theme }) => theme.colors.background};
-		color: ${({ theme }) => theme.colors.primary};
-	}
-`;
-
 const HamburgerMenu = styled.div`
 	display: none;
 	cursor: pointer;

@@ -1,5 +1,5 @@
 // import React from 'react';
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import SocialSidebar from "./SocialSidebar";
 import EmailSidebar from "./EmailSidebar";
@@ -97,7 +97,9 @@ const ResumeButton = styled.a`
 	border-radius: 5px;
 	color: ${({ theme }) => theme.colors.primary};
 	font-weight: bold;
-	transition: background-color 0.3s ease, color 0.3s ease;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
 	text-decoration: none;
 
 	&:hover {
@@ -106,8 +108,8 @@ const ResumeButton = styled.a`
 		transform: scale(1.1);
 	}
 `;
+
 const Hero = () => {
-	const [isMobileNavOpen, setMobileNavOpen] = useState(false);
 	return (
 		<>
 			<SocialSidebar />
@@ -118,11 +120,16 @@ const Hero = () => {
 				<Subtitle>Electrical Engineer & Software Developer.</Subtitle>
 				<Description>
 					Electrical & Computer Engineering student eager to explore
-					machine learning, AI, and VLSI. Skilled in full-stack and mobile
-					development, I'm passionate about creating impactful tech
-					solutions and advancing my knowledge in emerging technologies.
+					machine learning, AI, and VLSI. Skilled in Front-end Development
+					and mobile development, I'm passionate about creating impactful
+					tech solutions and advancing my knowledge in emerging
+					technologies.
 				</Description>
-				<ResumeButton href="/resume.pdf" target="_blank">
+				<ResumeButton
+					href="https://drive.google.com/file/d/1VSaO8M5KDqTV_CXjQgBldiaQWlrbq3WF/view?usp=sharing"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					Resume
 				</ResumeButton>
 				{/* <Button href="#contact">Check out my course!</Button> */}

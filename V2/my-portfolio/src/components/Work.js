@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import match3 from "../assets/match-3.png";
 import expense from "../assets/expense tracker.png";
+import abe from "../assets/abe.png";
 import ecotrack from "../assets/eco track.png";
-import snap from "../assets/Snap2Pdf.png";
+import catering from "../assets/maki.png";
+import dcmme from "../assets/dcmme.png";
 const WorkWrapper = styled.section`
 	padding: 4rem 2rem;
 	color: ${({ theme }) => theme.colors.text};
@@ -86,7 +87,10 @@ const ProjectCard = styled.div`
 	cursor: pointer;
 	align-items: center;
 	justify-content: center;
-	transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease,
+		border 0.3s ease;
 	border: 2px solid transparent;
 
 	&:hover {
@@ -174,13 +178,29 @@ const ProjectLink = styled.a`
 const Work = () => {
 	const projects = [
 		{
-			title: "Match-3 Game",
+			title: "DCMME",
 			description:
-				"A fun and interactive match-3 puzzle game with dynamic animations and scoring system.",
-			tags: ["JavaScript", "HTML5", "CSS3", "Pixi.js"],
-			link: "https://match-3-nine.vercel.app/",
-			github: "https://github.com/haile1713/match-3",
-			image: match3,
+				"A comprehensive microservice-based web application designed to automate and digitize key operational processes for DCMME Company, including auditing, document management, and risk analysis.",
+			tags: ["Next.js", "Microservices", "Frontend Development"],
+			// github: "https://github.com/haile1713/DCMME",
+			image: dcmme,
+		},
+		{
+			title: "Maki's Gourmet Catering",
+			description:
+				"A responsive catering website showcasing services, menu items, and business information with an elegant, mobile-friendly design.",
+			tags: ["Typescript", "Responsive Design", "Modern UI"],
+			link: "https://maki-s-gourmet-catering.vercel.app/",
+			// github: "https://github.com/haile1713/makis-catering",
+			image: catering,
+		},
+		{
+			title: "Abe - Amharic Voice Assistant",
+			description:
+				"An AI-powered voice assistant app for Android that understands and responds to Amharic voice commands. Control calls, alarms, lights, and doors through natural voice interaction in your native language.",
+			tags: ["Android", "AI", "Voice Recognition", "Amharic NLP"],
+			link: "https://haile-1713.itch.io/abe",
+			image: abe,
 		},
 		{
 			title: "Expense Tracker",
@@ -197,18 +217,8 @@ const Work = () => {
 			description:
 				"An eco-friendly waste management app that encourages responsible disposal practices with AI-powered insights.",
 			tags: ["React", "Next.js", "Drizzle", "Web3Auth", "Ethereum"],
-			// link: "https://eco-track-tau.vercel.app/",
 			github: "https://github.com/haile1713/EcoTrack",
 			image: ecotrack,
-		},
-		{
-			title: "Snap2PDF",
-			description:
-				"A desktop app that allows users to convert images into PDFs with ease. Supports multiple image formats and customizable PDF names and save locations.",
-			tags: ["Python", "Tkinter", "PDF Generation"],
-			link: "https://drive.google.com/file/d/1MWf-J2pKDvBoK2Et7JSVg0zKKsUkfp27/view?usp=drive_link",
-			github: "https://github.com/haile1713/Snap2PDF",
-			image: snap,
 		},
 	];
 
@@ -231,20 +241,24 @@ const Work = () => {
 								))}
 							</ProjectTags>
 							<IconsWrapper>
-								<ProjectLink
-									href={project.github}
-									target="_blank"
-									aria-label="GitHub Link"
-								>
-									<FaGithub />
-								</ProjectLink>
-								<ProjectLink
-									href={project.link}
-									target="_blank"
-									aria-label="External Link"
-								>
-									<FaExternalLinkAlt />
-								</ProjectLink>
+								{project.github && (
+									<ProjectLink
+										href={project.github}
+										target="_blank"
+										aria-label="GitHub Link"
+									>
+										<FaGithub />
+									</ProjectLink>
+								)}
+								{project.link && (
+									<ProjectLink
+										href={project.link}
+										target="_blank"
+										aria-label="External Link"
+									>
+										<FaExternalLinkAlt />
+									</ProjectLink>
+								)}
 							</IconsWrapper>
 						</ProjectContent>
 					</ProjectCard>

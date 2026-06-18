@@ -1,12 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-	FaGithub,
-	FaInstagram,
-	FaTwitter,
-	FaLinkedin,
-	FaDribbble,
-} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Sidebar = styled.div`
 	position: fixed;

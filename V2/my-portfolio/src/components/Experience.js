@@ -126,7 +126,9 @@ const JobTitle = styled.h3`
 		color: ${({ theme }) =>
 			theme.colors.primaryHover}; /* Change color on hover */
 		transform: scale(1.1); /* Scale slightly on hover */
-		transition: transform 0.3s ease, color 0.3s ease;
+		transition:
+			transform 0.3s ease,
+			color 0.3s ease;
 	}
 
 	@media (max-width: 768px) {
@@ -221,6 +223,44 @@ const Experience = () => {
 			],
 		},
 		{
+			name: "Maki's Gourmet Catering",
+			title: "Frontend Developer",
+			dates: "Private Client",
+			link: "https://maki-s-gourmet-catering.vercel.app/",
+
+			details: [
+				"Developed a responsive catering website for a private client using modern frontend technologies.",
+				"Designed and implemented clean user interface sections to showcase services, menu items, and business information.",
+				"Focused on mobile responsiveness, smooth navigation, and an elegant visual layout for better user experience.",
+				"Deployed the completed website online, making it accessible for customers and business promotion.",
+			],
+		},
+
+		{
+			name: "Everstone",
+			title: "Frontend Software Developer",
+			dates: "Sept 2025 – Feb 2026",
+			link: "PASTE_EVERSTONE_RECOMMENDATION_GOOGLE_DRIVE_LINK_HERE",
+			details: [
+				"Worked as a Frontend Software Developer, building and maintaining user-facing features for web applications.",
+				"Translated design concepts into functional, responsive, and intuitive interfaces.",
+				"Wrote clean, efficient, and maintainable frontend code using modern web development practices.",
+				"Collaborated with designers, backend developers, and product managers to deliver high-quality features within project deadlines.",
+			],
+		},
+		{
+			name: "Exclusive Calls",
+			title: "Business Development Representative",
+			dates: "Sept 2025 – Dec 2025",
+			link: "https://drive.google.com/file/d/12fSDKzv4DVRtqtlidhwc-k5csDVmIiKD/view?usp=sharing",
+			details: [
+				"Completed Business Development Representative training as an Independent Contractor.",
+				"Developed skills in client communication, lead handling, sales outreach, and customer relationship management.",
+				"Practiced professional communication strategies used in remote sales and business development workflows.",
+				"Gained experience working in a structured remote training environment with performance-based expectations.",
+			],
+		},
+		{
 			name: "Paz Terrazzo",
 			title: "Remote Software Development Engineer",
 			dates: "Jul 2024 – Sept 2024",
@@ -245,7 +285,7 @@ const Experience = () => {
 	];
 
 	const activeJob = companies.find(
-		(company) => company.name === activeCompany
+		(company) => company.name === activeCompany,
 	);
 
 	return (

@@ -84,11 +84,7 @@ const Footer = () => {
 				>
 					Brittany Chiang
 				</a>{" "}
-				and built by{" "}
-				<a href="#" target="_blank" rel="noopener noreferrer">
-					{" "}
-					Haileleul
-				</a>
+				and built by Haileleul
 			</div>
 			{/* <div className="icons">
         <a href="https://github.com/brittanychiang" target="_blank" rel="noopener noreferrer">

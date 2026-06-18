@@ -116,6 +116,18 @@ const NoteworthyProjects = () => {
 
 	const projects = [
 		{
+			title: "Match-3 Game",
+			tags: ["JavaScript", "HTML5", "CSS3", "Pixi.js"],
+			link: "https://match-3-nine.vercel.app/",
+			github: "https://github.com/haile1713/match-3",
+		},
+		{
+			title: "Snap2PDF",
+			tags: ["Python", "Tkinter", "PDF Generation"],
+			link: "https://drive.google.com/file/d/1MWf-J2pKDvBoK2Et7JSVg0zKKsUkfp27/view?usp=drive_link",
+			github: "https://github.com/haile1713/Snap2PDF",
+		},
+		{
 			title: "Paz Terrazzo",
 			tags: ["Next.js", "React", "Tailwind CSS", "ShadCN"],
 			link: "https://paz-sigma.vercel.app/",
@@ -124,7 +136,7 @@ const NoteworthyProjects = () => {
 		{
 			title: "Nuclearn",
 			tags: ["Next.js", "React", "Tailwind CSS"],
-			link: "https://nuclearn.vercel.app/",
+			// link: "https://nuclearn.vercel.app/",
 			github: "https://github.com/haile1713/nuclearn",
 		},
 		{
@@ -136,14 +148,13 @@ const NoteworthyProjects = () => {
 		{
 			title: "Tetris Game",
 			tags: ["JavaScript", "Konva.js", "Game Development"],
-			link: "https://tetris-konva.vercel.app/",
+			// link: "https://tetris-konva.vercel.app/",
 			github: "https://github.com/haile1713/Tetris--Konva",
 		},
 		{
 			title: "Bestie",
 			tags: ["Figma", "Flutter", "Firebase", "PostgreSQL"],
 			link: "https://www.figma.com/proto/ZXY8jEYI6c6zjA2cRyIiEj/Bestie?node-id=3-14&starting-point-node-id=3%3A14&t=50P36d0B2uQBod5p-1",
-			// link: "https://www.figma.com/proto/ZXY8jEYI6c6zjA2cRyIiEj/Bestie?node-id=117-469&starting-point-node-id=117%3A469&t=50P36d0B2uQBod5p-1",
 		},
 		{
 			title: "Filega",
@@ -166,14 +177,16 @@ const NoteworthyProjects = () => {
 					{displayedProjects.map((project, index) => (
 						<ProjectCard key={index}>
 							<div className="icons">
-								<a
-									href={project.link}
-									target="_blank"
-									rel="noopener noreferrer"
-									aria-label="Live Link"
-								>
-									<FaExternalLinkAlt className="linkIcon" />
-								</a>
+								{project.link && (
+									<a
+										href={project.link}
+										target="_blank"
+										rel="noopener noreferrer"
+										aria-label="Live Link"
+									>
+										<FaExternalLinkAlt className="linkIcon" />
+									</a>
+								)}
 								{project.github && (
 									<a
 										href={project.github}
@@ -185,14 +198,18 @@ const NoteworthyProjects = () => {
 									</a>
 								)}
 							</div>
-							<a
-								href={project.link}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Live Link"
-							>
+							{project.link ? (
+								<a
+									href={project.link}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Live Link"
+								>
+									<h4>{project.title}</h4>
+								</a>
+							) : (
 								<h4>{project.title}</h4>
-							</a>
+							)}
 							<div className="tags">{project.tags.join(" • ")}</div>
 						</ProjectCard>
 					))}

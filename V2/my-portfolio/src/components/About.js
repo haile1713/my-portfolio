@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import profileImage from "../assets/me.JPG"; // Adjust the path if needed
+import profileImage from "../assets/me.jpg"; // Adjust the path if needed
 
 const AboutWrapper = styled.section`
 	min-height: 100vh;
@@ -109,7 +109,10 @@ const ProfileImageWrapper = styled.div`
 	width: 100%; /* Make it flexible */
 	max-width: 200px; /* Maximum width */
 	aspect-ratio: 1; /* Keep aspect ratio */
-	transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+	transition:
+		transform 0.3s ease,
+		border-color 0.3s ease,
+		box-shadow 0.3s ease;
 
 	&:hover {
 		transform: scale(1.05);

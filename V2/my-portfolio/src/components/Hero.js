@@ -130,7 +130,6 @@ const Hero = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Resume
 				</ResumeButton>
 				{/* <Button href="#contact">Check out my course!</Button> */}
 			</HeroWrapper>

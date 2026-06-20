@@ -130,7 +130,7 @@ const NoteworthyProjects = () => {
 		{
 			title: "Paz Terrazzo",
 			tags: ["Next.js", "React", "Tailwind CSS", "ShadCN"],
-			link: "https://paz-sigma.vercel.app/",
+			link: "https://pazengineering.com",
 			github: "https://github.com/haile1713/PAZ",
 		},
 		{

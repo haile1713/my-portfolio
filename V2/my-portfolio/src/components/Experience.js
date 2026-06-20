@@ -264,6 +264,7 @@ const Experience = () => {
 			name: "Paz Terrazzo",
 			title: "Remote Software Development Engineer",
 			dates: "Jul 2024 – Sept 2024",
+			link: "https://pazengineering.com",
 			details: [
 				"Developed automation scripts to optimize data processing for large-scale operations.",
 				"Implemented user interfaces to simplify data interaction for non-technical users.",

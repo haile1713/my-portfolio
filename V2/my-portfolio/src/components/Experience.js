@@ -240,7 +240,7 @@ const Experience = () => {
 			name: "Everstone",
 			title: "Frontend Software Developer",
 			dates: "Sept 2025 – Feb 2026",
-			// link: "PASTE_EVERSTONE_RECOMMENDATION_GOOGLE_DRIVE_LINK_HERE",
+			link: "https://www.everstonetechnologies.com/",
 			details: [
 				"Worked as a Frontend Software Developer, building and maintaining user-facing features for web applications.",
 				"Translated design concepts into functional, responsive, and intuitive interfaces.",

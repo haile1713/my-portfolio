@@ -126,7 +126,7 @@ const Hero = () => {
 					technologies.
 				</Description>
 				<ResumeButton
-					href="https://drive.google.com/file/d/1VSaO8M5KDqTV_CXjQgBldiaQWlrbq3WF/view?usp=sharing"
+					href="https://drive.google.com/file/d/1pKtcsBEliW1shjpKMEJUgdxMhNIb4dDs/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 				>

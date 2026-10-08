@@ -116,6 +116,17 @@ const NoteworthyProjects = () => {
 
 	const projects = [
 		{
+			title: "Expense Tracker",
+			tags: ["React", "Firebase", "Machine Learning", "Tailwind CSS"],
+			link: "https://expense-tracker-update-pi.vercel.app/",
+			github: "https://github.com/haile1713/Simple--Expense-tracker-app-with-ML-",
+		},
+		{
+			title: "Eco Tracker",
+			tags: ["React", "Next.js", "Drizzle", "Web3Auth", "Ethereum"],
+			github: "https://github.com/haile1713/EcoTrack",
+		},
+		{
 			title: "Match-3 Game",
 			tags: ["JavaScript", "HTML5", "CSS3", "Pixi.js"],
 			link: "https://match-3-nine.vercel.app/",
@@ -126,12 +137,6 @@ const NoteworthyProjects = () => {
 			tags: ["Python", "Tkinter", "PDF Generation"],
 			link: "https://drive.google.com/file/d/1MWf-J2pKDvBoK2Et7JSVg0zKKsUkfp27/view?usp=drive_link",
 			github: "https://github.com/haile1713/Snap2PDF",
-		},
-		{
-			title: "Paz Terrazzo",
-			tags: ["Next.js", "React", "Tailwind CSS", "ShadCN"],
-			link: "https://pazengineering.com",
-			github: "https://github.com/haile1713/PAZ",
 		},
 		{
 			title: "Nuclearn",

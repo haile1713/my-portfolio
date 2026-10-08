@@ -235,6 +235,18 @@ const Experience = () => {
 				"Deployed the completed website online, making it accessible for customers and business promotion.",
 			],
 		},
+		{
+			name: "Lulesegd Retta Artist",
+			title: "Frontend Developer",
+			dates: "Private Client",
+			link: "https://lulesegedrettaartist.vercel.app/",
+			details: [
+				"Developed a professional artist portfolio website showcasing creative works and artistic journey.",
+				"Implemented responsive design with modern UI components to highlight artwork galleries and exhibitions.",
+				"Created an intuitive user experience for visitors to explore different art collections and categories.",
+				"Deployed and optimized the website for performance, ensuring fast loading times and smooth navigation.",
+			],
+		},
 
 		{
 			name: "Everstone",

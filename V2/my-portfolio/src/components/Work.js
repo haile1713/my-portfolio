@@ -6,6 +6,8 @@ import abe from "../assets/abe.png";
 import ecotrack from "../assets/eco track.png";
 import catering from "../assets/maki.png";
 import dcmme from "../assets/dcmme.png";
+import paz from "../assets/paz.png";
+import leulseged from "../assets/leulseged.png";
 const WorkWrapper = styled.section`
 	padding: 4rem 2rem;
 	color: ${({ theme }) => theme.colors.text};
@@ -59,7 +61,7 @@ const ProjectGrid = styled.div`
 const ProjectImage = styled.img`
 	width: 100%;
 	max-width: 400px;
-	height: auto;
+	height: 250px;
 	object-fit: cover;
 	border-radius: 8px;
 	filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg)
@@ -73,6 +75,7 @@ const ProjectImage = styled.img`
 
 	@media (max-width: 768px) {
 		max-width: 100%;
+		height: 200px;
 	}
 `;
 
@@ -195,30 +198,29 @@ const Work = () => {
 			image: catering,
 		},
 		{
+			title: "Lulesegd Retta Artist Portfolio",
+			description:
+				"A professional artist portfolio website showcasing creative works, exhibitions, and artistic journey with modern responsive design.",
+			tags: ["React", "Next.js", "Responsive Design", "Portfolio"],
+			link: "https://lulesegedrettaartist.vercel.app/",
+			image: leulseged,
+		},
+		{
 			title: "Abe - Amharic Voice Assistant",
 			description:
-				"An AI-powered voice assistant app for Android that understands and responds to Amharic voice commands. Control calls, alarms, lights, and doors through natural voice interaction in your native language.",
+				"An AI-powered voice assistant for Android that understands and responds to Amharic voice commands with natural language processing.",
 			tags: ["Android", "AI", "Voice Recognition", "Amharic NLP"],
 			link: "https://haile-1713.itch.io/abe",
 			image: abe,
 		},
 		{
-			title: "Expense Tracker",
+			title: "Paz Terrazzo",
 			description:
-				"A full-featured expense tracker with categorization, budgeting, and ML predictions for future expenses.",
-			tags: ["React", "Firebase", "Machine Learning", "Tailwind CSS"],
-			link: "https://expense-tracker-update-pi.vercel.app/",
-			github:
-				"https://github.com/haile1713/Simple--Expense-tracker-app-with-ML-",
-			image: expense,
-		},
-		{
-			title: "Eco Tracker",
-			description:
-				"An eco-friendly waste management app that encourages responsible disposal practices with AI-powered insights.",
-			tags: ["React", "Next.js", "Drizzle", "Web3Auth", "Ethereum"],
-			github: "https://github.com/haile1713/EcoTrack",
-			image: ecotrack,
+				"A professional terrazzo and tile company website showcasing premium flooring solutions with modern design and client portfolio.",
+			tags: ["Next.js", "React", "Tailwind CSS", "ShadCN"],
+			link: "https://pazengineering.com",
+			github: "https://github.com/haile1713/PAZ",
+			image: paz,
 		},
 	];
 

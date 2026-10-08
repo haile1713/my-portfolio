@@ -115,10 +115,7 @@ margin-bottom: 0;
 margin-right: 0.5rem;
 padding: 0.75rem 1rem;
 border-left: none;
-border-bottom: ${({ active, theme }) =>
-active
-? `3px solid ${theme.colors.primary}`
-: "3px solid transparent"};
+
 font-size: 0.9rem;
 }
 `;
@@ -375,3 +372,4 @@ rel="noopener noreferrer"
 };
 
 export default Experience;
+

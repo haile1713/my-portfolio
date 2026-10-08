@@ -68,7 +68,7 @@ gap: 3rem;
 const ProjectImage = styled.img`
 width: 100%;
 max-width: 400px;
-height: 250px;
+height: 280px;
 object-fit: cover;
 border-radius: 8px;
 filter: grayscale(100%) brightness(0.7) sepia(0.8) hue-rotate(45deg)
@@ -307,3 +307,5 @@ aria-label="External Link"
 };
 
 export default Work;
+
+

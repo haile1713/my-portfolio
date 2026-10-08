@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import expense from "../assets/expense tracker.png";
 import abe from "../assets/abe.png";
-import ecotrack from "../assets/eco track.png";
 import catering from "../assets/maki.png";
 import dcmme from "../assets/dcmme.png";
 import paz from "../assets/paz.png";
